@@ -14,3 +14,20 @@ simpler option of using Flask. I drew on the following sources.
 * http://gouthamanbalaraman.com/blog/minimal-flask-login-example.html
 * http://stackoverflow.com/questions/16627384/flask-login-with-static-user-always-yielding-401-unauthorized
 
+Deployment
+----
+
+I'm planning to use Heroku for this, because it's easy and painless. Here are
+some tutorials because I haven't played with Heroku in a year or two.
+
+* http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xviii-deployment-on-the-heroku-cloud
+* https://devcenter.heroku.com/articles/getting-started-with-python-o
+
+I'm on a new-ish Lubuntu box and don't have the Heroku tools set up.
+
+```shell
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+heroku login
+```
+
+
