@@ -23,11 +23,14 @@ some tutorials because I haven't played with Heroku in a year or two.
 * http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xviii-deployment-on-the-heroku-cloud
 * https://devcenter.heroku.com/articles/getting-started-with-python-o
 
-I'm on a new-ish Lubuntu box and don't have the Heroku tools set up.
+I'm on a new-ish Lubuntu box and don't have the Heroku tools set up. So let's
+get those, and then do a deployment.
 
 ```shell
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 heroku login
+git push heroku master
+# wait for it to finish deploying
+heroku open    # open the app in your default browser
+heroku logs    # examine the server logs
 ```
-
-
